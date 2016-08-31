@@ -1,3 +1,66 @@
-.test {
-  background-color: black;
+.sbutton{
+display: flex;
+height: 10vh;
+width:10vw;
+margin-top: 10vw;
+justify-content: center;
+}
+.p{
+	display: flex;
+	margin-top: 10vw;
+}
+
+.box{
+	display: flex;
+	height: 47.5vh;
+	width:100vw;
+	justify-content: center;
+
+
+}
+.number1{
+	display: flex;
+	border-radius: 25px;
+	height: 50vh;
+	width:30vw;
+	background:red;
+	justify-content: center;
+}
+.number2{
+	display: flex;
+	border-radius: 25px;
+	height: 50vh;
+	width:30vw;
+	background:green;
+	justify-content: center;
+	align-content: center;
+}
+.number3{
+	display: flex;
+	border-radius: 25px;
+	height: 50vh;
+	width:30vw;
+	background:blue;
+	justify-content: center;
+	align-content: center;
+}
+.number4{
+	display: flex;
+	border-radius: 600px;
+	height: 50vh;
+	width:100vw;
+	background:yellow;
+	justify-content: center;
+	align-content: center;
+
+}
+.vhole{
+	display: flex;
+	height: 50vh;
+	width:5vw;
+}
+.hhole{
+	display: flex;
+	height: 5vh;
+	width:100vw;
 }

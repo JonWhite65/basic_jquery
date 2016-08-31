@@ -54,8 +54,102 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var colorSet = ["red", "green", "blue"];
+	var colorSet1 = ["lime", "fuchsia", "aqua"];
+	var currentColor = [0, 1, 2];
+	var code = [1, 1, 3, 1, 2, 3];
+	var currentCode = 0;
+	var runLights = false;
+	
 	(0, _jquery2.default)(document).ready(function () {
-	  (0, _jquery2.default)('h1').css('color', 'red');
+	
+		(0, _jquery2.default)("#button1").click(function () {
+			if (currentColor[0] === 2) {
+				(0, _jquery2.default)(".number1").css("background-color", colorSet[0]);
+				currentColor[0] = 0;
+			} else {
+				(0, _jquery2.default)(".number1").css("background-color", colorSet[currentColor[0] + 1]);
+				currentColor[0] += 1;
+			}
+			//	if(code[currentCode]===1){
+			//		currentCode+=1
+			//		if(currentCode===6){
+			//			currentCode=0
+			//			runLights=!runLights
+			//			party()
+			//		}
+			//	}
+			//	else{
+			//		currentCode=0
+			//	}
+	
+		});
+		(0, _jquery2.default)("#button2").click(function () {
+			if (currentColor[1] === 2) {
+				(0, _jquery2.default)(".number2").css("background-color", colorSet[0]);
+				currentColor[1] = 0;
+			} else {
+				(0, _jquery2.default)(".number2").css("background-color", colorSet[currentColor[1] + 1]);
+				currentColor[1] += 1;
+			}
+			//	if(code[currentCode]===2){
+			//		currentCode+=1
+			//		if(currentCode===6){
+			//			currentCode=0
+			//			runLights=!runLights
+			//			party()
+			//		}
+			//	}
+			//	else{
+			//		currentCode=0
+			//	}
+		});
+		(0, _jquery2.default)("#button3").click(function () {
+			if (currentColor[2] === 2) {
+				(0, _jquery2.default)(".number3").css("background-color", colorSet[0]);
+				currentColor[2] = 0;
+			} else {
+				(0, _jquery2.default)(".number3").css("background-color", colorSet[currentColor[2] + 1]);
+				currentColor[2] += 1;
+			}
+			//	if(code[currentCode]===3){
+			//		currentCode+=1
+			//		if(currentCode===6){
+			//			currentCode=0
+			//			runLights=!runLights
+			//			party()
+			//		}
+			//	}
+			//	else{
+			//		currentCode=0
+			//	}
+		});
+		(0, _jquery2.default)("#buttonReset").click(function () {
+			currentColor = [0, 1, 2];
+			(0, _jquery2.default)(".number1").css("background-color", colorSet[0]);
+			(0, _jquery2.default)(".number2").css("background-color", colorSet[1]);
+			(0, _jquery2.default)(".number3").css("background-color", colorSet[2]);
+		});
+		//party(){
+		//	while(runLights){
+		//		x=getRandomInt(0,3)
+		//		$("#button1").css("background-color",colorSet1[x])
+		//		$("#button2").css("background-color",colorSet1[x])
+		//		$("#button3").css("background-color",colorSet1[x])
+		//
+		//
+		//	}
+		//	$("#button1").css("background-color",])
+		//	$("#button2").css("background-color",)
+		//	$("#button3").css("background-color",)
+		//
+		//
+		//}
+		//function getRandomInt(min, max) {
+		//	  min = Math.ceil(min);
+		//	  max = Math.floor(max);
+		//	  return Math.floor(Math.random() * (max - min)) + min;
+		//	}
 	});
 
 /***/ },
